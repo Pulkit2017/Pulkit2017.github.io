@@ -1,6 +1,6 @@
 # Pulkit Kumar Singh — Portfolio
 
-A responsive, static portfolio website built with HTML, CSS, and vanilla JavaScript. It is designed for GitHub Pages and requires no build step.
+A responsive, static portfolio website built with HTML, CSS, and vanilla JavaScript. It is designed for GitHub Pages and requires no build step. The profile emphasizes recent backend/data engineering work (Java 21, MySQL, ClickHouse, messaging, batch processing, and CI/CD) while retaining earlier iOS experience.
 
 ## Files
 - `index.html` — content and page structure
@@ -11,7 +11,7 @@ A responsive, static portfolio website built with HTML, CSS, and vanilla JavaScr
 1. Open `index.html`.
 2. Replace `your.email@example.com` with your preferred public email address.
 3. Replace the LinkedIn placeholder URL with your profile URL.
-4. Review the experience dates, technology list, project descriptions, and links.
+4. Review the experience dates, technology list, project descriptions, and links. The new technical project cards summarize themes from prior technical discussions; make sure each one accurately reflects your hands-on implementation before publishing.
 5. Remove any project or details you do not want to share publicly.
 6. Optionally add a résumé PDF to this folder and link it from the hero section.
 
