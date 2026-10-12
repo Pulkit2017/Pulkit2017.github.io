@@ -17,10 +17,10 @@
       <a class="brand" href="#home" aria-label="Go to home"><span class="brand-mark">P</span><span>Pulkit<span class="brand-dot">.</span></span></a>
       <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
       <nav class="nav" id="nav">
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
+        <a href="#about">Profile</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
         <a class="nav-cta" href="#contact">Let’s connect <span>↗</span></a>
       </nav>
     </header>
@@ -32,9 +32,9 @@
           <p class="hello">Hello, I’m</p>
           <h1>Pulkit Kumar<br><span class="gradient-text">Singh.</span></h1>
           <h2>Senior Software Engineer <span class="slash">/</span> Java Backend & Data Systems</h2>
-          <p class="hero-description">I engineer backend workflows and data-intensive applications with Java, MySQL, ClickHouse, and messaging systems—with a foundation in native iOS development.</p>
+          <p class="hero-description">Java backend engineer focused on data-heavy applications, reliable processing pipelines, database reporting, and messaging integrations.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#projects">Explore my work <span>↘</span></a>
+            <a class="button button-primary" href="#projects">Explore projects <span>↘</span></a>
             <a class="button button-secondary" href="#contact">Get in touch</a>
           </div>
           <div class="hero-socials">
@@ -66,121 +66,82 @@
         <a class="scroll-cue" href="#about"><span></span> SCROLL TO EXPLORE</a>
       </section>
 
-      <section class="section about-section" id="about">
-        <div class="section-heading"><p class="section-kicker">01 / ABOUT</p><h2>Engineering with <span class="gradient-text">purpose.</span></h2></div>
-        <div class="about-grid">
-          <div class="about-lead"><p class="large-copy">I build and improve software systems where throughput, data correctness, and maintainability matter.</p><p>In recent years, my work has focused on Core Java applications, processing large data files, multithreaded and batch database operations, MySQL and ClickHouse reporting, and asynchronous processing with JMS and messaging platforms. I also work across application deployment and delivery workflows using WildFly, Docker, Git, and CI/CD tooling. Earlier in my career, I built and maintained native iOS applications.</p><p class="edit-note">Review this summary and adjust any details that do not reflect your current responsibilities.</p></div>
-          <div class="stat-grid">
-            <div class="stat-card"><span class="stat-number">Java</span><span class="stat-label">Backend application development</span></div>
-            <div class="stat-card"><span class="stat-number">Data</span><span class="stat-label">High-volume processing and analytics</span></div>
-            <div class="stat-card stat-wide"><span class="stat-number">End-to-end</span><span class="stat-label">Application design, SQL performance, observability, deployment, and code quality</span></div>
+      <section class="section about-section compact-about" id="about">
+        <div class="about-compact-copy">
+          <p class="section-kicker">PROFILE</p>
+          <p class="large-copy">I build backend systems where data volume, correctness, and maintainability matter.</p>
+          <p>Recent work spans Core Java, multithreaded and batch processing, MySQL and ClickHouse analytics, messaging, and application delivery. Earlier work includes native iOS applications.</p>
+        </div>
+        <div class="profile-highlights"><span>Java 21</span><span>MySQL · ClickHouse</span><span>Messaging & data pipelines</span><span>Docker · CI/CD</span></div>
+      </section>
+
+      <section class="section projects-section horizontal-projects" id="projects">
+        <div class="section-heading project-heading-row">
+          <div><p class="section-kicker">SELECTED WORK / PROJECT TIMELINE</p><h2>Projects, <span class="gradient-text">not just titles.</span></h2><p class="section-subtitle">Scroll horizontally to explore the work. Each milestone shows the company or workstream, project, and technology stack.</p></div>
+          <div class="timeline-scroll-hint"><span>←</span> SCROLL TO EXPLORE <span>→</span></div>
+        </div>
+        <div class="horizontal-timeline-wrap" aria-label="Horizontally scrollable project timeline">
+          <div class="horizontal-timeline">
+            <article class="milestone">
+              <div class="milestone-company"><span class="company-label">VALUEFIRST · TANLA</span><span class="milestone-date">RECENT BACKEND WORK</span></div>
+              <div class="milestone-project"><span class="milestone-number">01</span><h3>Messaging Delivery MIS</h3><p>Delivery-status reporting for SMS, RCS, and WhatsApp with database-backed processing workflows.</p></div>
+              <div class="milestone-node" aria-hidden="true"><span></span></div>
+              <div class="milestone-tech"><span class="tech-label">TECHNOLOGY</span><ul class="tag-list"><li>Java 21</li><li>MySQL 8</li><li>ClickHouse</li><li>JMS</li><li>WildFly</li></ul></div>
+            </article>
+            <article class="milestone">
+              <div class="milestone-company"><span class="company-label">VALUEFIRST · TANLA</span><span class="milestone-date">DATA PROCESSING</span></div>
+              <div class="milestone-project"><span class="milestone-number">02</span><h3>Large-File Processing</h3><p>CSV ingestion and high-volume database writes with batching, concurrency, and restart-safety considerations.</p></div>
+              <div class="milestone-node" aria-hidden="true"><span></span></div>
+              <div class="milestone-tech"><span class="tech-label">TECHNOLOGY</span><ul class="tag-list"><li>Core Java</li><li>Multithreading</li><li>JDBC</li><li>Batch inserts</li><li>MySQL</li></ul></div>
+            </article>
+            <article class="milestone">
+              <div class="milestone-company"><span class="company-label">VALUEFIRST · TANLA</span><span class="milestone-date">REPORTING & ANALYTICS</span></div>
+              <div class="milestone-project"><span class="milestone-number">03</span><h3>Delivery Analytics</h3><p>Message lifecycle metrics, grouped counts, date/service filters, percentages, and query tuning.</p></div>
+              <div class="milestone-node" aria-hidden="true"><span></span></div>
+              <div class="milestone-tech"><span class="tech-label">TECHNOLOGY</span><ul class="tag-list"><li>SQL</li><li>MySQL 8</li><li>ClickHouse</li><li>Aggregations</li></ul></div>
+            </article>
+            <article class="milestone">
+              <div class="milestone-company"><span class="company-label">VALUEFIRST · TANLA</span><span class="milestone-date">BUILD & DELIVERY</span></div>
+              <div class="milestone-project"><span class="milestone-number">04</span><h3>Build & Deployment</h3><p>Java packaging and deployment workflows, containerized environments, and code-quality checks.</p></div>
+              <div class="milestone-node" aria-hidden="true"><span></span></div>
+              <div class="milestone-tech"><span class="tech-label">TECHNOLOGY</span><ul class="tag-list"><li>Maven</li><li>Jenkins</li><li>Docker</li><li>WildFly</li><li>SonarQube</li></ul></div>
+            </article>
+            <article class="milestone">
+              <div class="milestone-company"><span class="company-label">IOS PRODUCT WORK</span><span class="milestone-date">MOBILE / COMMUNICATIONS</span></div>
+              <div class="milestone-project"><span class="milestone-number">05</span><h3>Surbo Live Chat</h3><p>Live-agent chat with messaging, file sharing, call capabilities, transfers, and agent performance views.</p></div>
+              <div class="milestone-node" aria-hidden="true"><span></span></div>
+              <div class="milestone-tech"><span class="tech-label">TECHNOLOGY</span><ul class="tag-list"><li>Swift</li><li>Socket.io</li><li>REST APIs</li><li>Twilio SDK</li></ul><a class="milestone-link" href="https://apps.apple.com/us/app/surbo-live-chat/id1539844276" target="_blank" rel="noreferrer">App Store listing ↗</a></div>
+            </article>
+            <article class="milestone">
+              <div class="milestone-company"><span class="company-label">IOS PRODUCT WORK</span><span class="milestone-date">MOBILE / WELLNESS</span></div>
+              <div class="milestone-project"><span class="milestone-number">06</span><h3>EliteCIO</h3><p>Leadership platform with chat, feeds, reviews, and HealthKit activity data visualizations.</p></div>
+              <div class="milestone-node" aria-hidden="true"><span></span></div>
+              <div class="milestone-tech"><span class="tech-label">TECHNOLOGY</span><ul class="tag-list"><li>iOS</li><li>HealthKit</li><li>API integration</li><li>Data visualization</li></ul><a class="milestone-link" href="https://apps.apple.com/us/app/elite-cio/id1455827127" target="_blank" rel="noreferrer">App Store listing ↗</a></div>
+            </article>
+            <article class="milestone">
+              <div class="milestone-company"><span class="company-label">CRYSTAL TRAVEL · MORESANDGROUP</span><span class="milestone-date">JUL 2016 — JAN 2018</span></div>
+              <div class="milestone-project"><span class="milestone-number">07</span><h3>Travel Booking App</h3><p>Flight and hotel booking flows with listings, filters, promo codes, and payment integration.</p></div>
+              <div class="milestone-node" aria-hidden="true"><span></span></div>
+              <div class="milestone-tech"><span class="tech-label">TECHNOLOGY</span><ul class="tag-list"><li>Swift</li><li>REST APIs</li><li>Stripe</li><li>Booking flows</li></ul></div>
+            </article>
+            <article class="milestone">
+              <div class="milestone-company"><span class="company-label">RADIANSYS TECHNOLOGIES</span><span class="milestone-date">MAR 2015 — JUL 2016</span></div>
+              <div class="milestone-project"><span class="milestone-number">08</span><h3>Native iOS Applications</h3><p>Mobile application development, product requirement analysis, and technical issue resolution.</p></div>
+              <div class="milestone-node" aria-hidden="true"><span></span></div>
+              <div class="milestone-tech"><span class="tech-label">TECHNOLOGY</span><ul class="tag-list"><li>Objective-C</li><li>Swift</li><li>REST APIs</li><li>iOS</li></ul></div>
+            </article>
           </div>
         </div>
-        <p class="tiny-note">This profile emphasizes technical areas discussed in our chats and your résumé. Keep skills and ownership claims aligned with your actual production experience.</p>
+        <p class="tiny-note">Project summaries are based on the résumé and technical discussions. Confirm dates, company attribution, technology usage, and public links before publishing.</p>
       </section>
 
-      <section class="section experience-section" id="experience">
-        <div class="section-heading"><p class="section-kicker">02 / EXPERIENCE</p><h2>Where I’ve <span class="gradient-text">made an impact.</span></h2><p class="section-subtitle">A snapshot of my professional journey. Review dates and descriptions before publishing.</p></div>
-        <div class="timeline">
-          <article class="timeline-item current">
-            <div class="timeline-marker"></div>
-            <div class="timeline-meta"><span>JAN 2018 — PRESENT</span><span class="current-tag">CURRENT ROLE — VERIFY</span></div>
-            <div class="timeline-card">
-              <div class="timeline-title"><div><h3>Senior Software Engineer</h3><p class="company">ValueFirst, a Tanla company</p></div><span class="timeline-icon">↗</span></div>
-              <p>Work across application architecture and design, bottleneck analysis, performance improvements, quality releases, and delivery. Backend initiatives include a Management Information System for SMS, RCS, and WhatsApp delivery-status reporting, with data processing and database integration workflows.</p>
-              <ul class="tag-list"><li>Java 21</li><li>MySQL</li><li>ClickHouse</li><li>JMS / Messaging</li><li>WildFly</li><li>Docker</li><li>Performance</li></ul>
-            </div>
-          </article>
-          <article class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-meta"><span>JUL 2016 — JAN 2018</span></div>
-            <div class="timeline-card">
-              <div class="timeline-title"><div><h3>iOS Developer</h3><p class="company">Crystal Travel (MoresandGroup)</p></div><span class="timeline-icon">↗</span></div>
-              <p>Developed and maintained flight and hotel booking experiences, refined UI/UX with product and design teams, and worked with QA to improve application quality.</p>
-              <ul class="tag-list"><li>Swift</li><li>REST APIs</li><li>Payment gateway</li><li>UI/UX</li></ul>
-            </div>
-          </article>
-          <article class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-meta"><span>MAR 2015 — JUL 2016</span></div>
-            <div class="timeline-card">
-              <div class="timeline-title"><div><h3>iOS Developer</h3><p class="company">Radiansys Technologies</p></div><span class="timeline-icon">↗</span></div>
-              <p>Worked with the team to develop and maintain iOS applications, analyze product requirements, and resolve technical bottlenecks.</p>
-              <ul class="tag-list"><li>Objective-C</li><li>Swift</li><li>REST APIs</li><li>Mobile apps</li></ul>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="section projects-section" id="projects">
-        <div class="section-heading"><p class="section-kicker">03 / SELECTED WORK</p><h2>Projects that <span class="gradient-text">solve problems.</span></h2><p class="section-subtitle">Selected backend, data-processing, and mobile work. Add only public links and details you are permitted to share.</p></div>
-        <div class="project-grid">
-          <article class="project-card project-featured">
-            <div class="project-top"><span class="project-index">01</span><span class="project-type">BACKEND SYSTEM</span><span class="project-arrow">↗</span></div>
-            <div class="project-art art-data"><div class="data-node node-a"></div><div class="data-node node-b"></div><div class="data-node node-c"></div><div class="data-line line-a"></div><div class="data-line line-b"></div><div class="data-line line-c"></div><span class="art-label">EVENT → PROCESS → INSIGHT</span></div>
-            <h3>Messaging Delivery-Status MIS</h3>
-            <p>A Core Java application for customers to inspect SMS, RCS, and WhatsApp delivery status. The surrounding engineering work includes data ingestion, reporting queries, and performance-conscious processing across relational and analytical databases.</p>
-            <ul class="tag-list"><li>Java 21</li><li>MySQL 8</li><li>ClickHouse</li><li>JMS</li><li>WildFly</li><li>Docker</li></ul>
-            <p class="project-footnote">Add a sanitized architecture summary or public repository link if available.</p>
-          </article>
-          <article class="project-card">
-            <div class="project-top"><span class="project-index">02</span><span class="project-type">DATA PROCESSING</span><span class="project-arrow">↗</span></div>
-            <div class="project-art art-data"><div class="data-node node-a"></div><div class="data-node node-b"></div><div class="data-node node-c"></div><div class="data-line line-a"></div><div class="data-line line-b"></div><div class="data-line line-c"></div><span class="art-label">READ → BATCH → WRITE</span></div>
-            <h3>Large-File Processing Pipeline</h3>
-            <p>Java processing workflows for large CSV inputs, with multithreading, batched database writes, failure/restart considerations, and safeguards against duplicate processing.</p>
-            <ul class="tag-list"><li>Core Java</li><li>Concurrency</li><li>JDBC</li><li>Batch inserts</li><li>MySQL</li></ul>
-            <p class="project-footnote">Describe the exact implementation and scale you can publicly disclose.</p>
-          </article>
-          <article class="project-card">
-            <div class="project-top"><span class="project-index">03</span><span class="project-type">DATABASE / ANALYTICS</span><span class="project-arrow">↗</span></div>
-            <div class="project-art art-health"><div class="health-ring"><span>DATA<br><b>INSIGHTS</b></span></div><div class="health-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
-            <h3>Delivery Analytics & SQL Optimization</h3>
-            <p>Reporting for message-delivery lifecycle metrics, including grouped counts and percentages, date and service filters, and SQL patterns adapted across MySQL and ClickHouse.</p>
-            <ul class="tag-list"><li>SQL</li><li>MySQL 8</li><li>ClickHouse</li><li>Aggregations</li><li>Query tuning</li></ul>
-          </article>
-          <article class="project-card">
-            <div class="project-top"><span class="project-index">04</span><span class="project-type">DEVOPS / DELIVERY</span><span class="project-arrow">↗</span></div>
-            <div class="project-art art-travel"><div class="travel-card"><span class="travel-sun"></span><span class="travel-mountain"></span><span class="travel-mountain mountain-two"></span><span class="travel-path"></span></div><div class="travel-ticket">BUILD<br><b>SHIP SAFELY</b></div></div>
-            <h3>Build & Deployment Workflows</h3>
-            <p>Build and deployment workflows for Java applications, including WAR packaging, WildFly deployment, Docker-based environments, CI/CD automation, and static code-quality checks.</p>
-            <ul class="tag-list"><li>Maven</li><li>Jenkins</li><li>GitHub Actions</li><li>Docker</li><li>WildFly</li><li>SonarQube</li></ul>
-          </article>
-          <article class="project-card">
-            <div class="project-top"><span class="project-index">05</span><span class="project-type">MOBILE / SOCIAL</span><a class="project-arrow" href="https://apps.apple.com/us/app/surbo-chat/id6758707062" target="_blank" rel="noreferrer" aria-label="Open Surbo App Store listing">↗</a></div>
-            <div class="project-art art-chat"><div class="chat-bubble bubble-one">Hi! How can I help?</div><div class="chat-bubble bubble-two">Let’s talk to an agent.</div><div class="chat-avatar">S</div></div>
-            <h3>Surbo Live Chat</h3>
-            <p>Chat experience connecting users with agents, with messaging, file sharing, call capabilities, chat transfers, and agent performance graphs.</p>
-            <ul class="tag-list"><li>Swift</li><li>Socket.io</li><li>REST APIs</li><li>Twilio SDK</li></ul>
-          </article>
-          <article class="project-card">
-            <div class="project-top"><span class="project-index">06</span><span class="project-type">MOBILE / WELLNESS</span><a class="project-arrow" href="https://play.google.com/store/apps/details?id=com.elitecio&hl=en_IE" target="_blank" rel="noreferrer" aria-label="Open EliteCIO App Store listing">↗</a></div>
-            <div class="project-art art-health"><div class="health-ring"><span>WELL<br><b>BEING</b></span></div><div class="health-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
-            <h3>EliteCIO</h3>
-            <p>A leadership platform featuring chat, feeds, reviews, and HealthKit activity data visualized across daily, weekly, monthly, and yearly views.</p>
-            <ul class="tag-list"><li>Android/iOS</li><li>HealthKit</li><li>API integration</li><li>Data visualization</li></ul>
-          </article>
-          <article class="project-card">
-            <div class="project-top"><span class="project-index">07</span><span class="project-type">TRAVEL / COMMERCE</span><a class="project-arrow" href="#contact" aria-label="Ask me about this project">↗</a></div>
-            <div class="project-art art-travel"><div class="travel-card"><span class="travel-sun"></span><span class="travel-mountain"></span><span class="travel-mountain mountain-two"></span><span class="travel-path"></span></div><div class="travel-ticket">TRAVEL<br><b>YOUR WAY</b></div></div>
-            <h3>Crystal Travel</h3>
-            <p>Flight and hotel booking features including listings, filters, sorting, promotional codes, and payment integration.</p>
-            <ul class="tag-list"><li>Swift</li><li>REST APIs</li><li>Stripe</li><li>Booking flows</li></ul>
-          </article>
-        </div>
-        <p class="tiny-note">Project summaries are based on the supplied résumé. Keep only work you are comfortable sharing publicly and confirm each link.</p>
-      </section>
-
-      <section class="section skills-section" id="skills">
-        <div class="section-heading"><p class="section-kicker">04 / TOOLKIT</p><h2>My technical <span class="gradient-text">toolkit.</span></h2></div>
+      <section class="section skills-section compact-skills" id="skills">
+        <div class="section-heading"><p class="section-kicker">TECHNICAL TOOLKIT</p><h2>Tools I <span class="gradient-text">work with.</span></h2></div>
         <div class="skills-grid">
-          <div class="skill-panel"><div class="skill-icon">⌘</div><h3>Java & Application Engineering</h3><div class="skill-pills"><span>Java 21</span><span>Core Java</span><span>Multithreading</span><span>Concurrency</span><span>JDBC</span><span>Servlets / JSP</span><span>MVC</span><span>Maven</span><span>REST APIs</span></div></div>
-          <div class="skill-panel"><div class="skill-icon">▤</div><h3>Databases & Data Processing</h3><div class="skill-pills"><span>MySQL 8</span><span>ClickHouse</span><span>SQL optimization</span><span>Batch inserts</span><span>Aggregations</span><span>CSV ingestion</span><span>Reporting</span><span>Data consistency</span></div></div>
-          <div class="skill-panel"><div class="skill-icon">◈</div><h3>Messaging & Integration</h3><div class="skill-pills"><span>JMS</span><span>Kafka</span><span>NATS</span><span>Queue consumers</span><span>Scheduled jobs</span><span>REST integration</span><span>Asynchronous processing</span></div></div>
-          <div class="skill-panel"><div class="skill-icon">⚙</div><h3>DevOps, Runtime & Quality</h3><div class="skill-pills"><span>WildFly</span><span>Docker</span><span>Docker Compose</span><span>Jenkins</span><span>GitHub Actions</span><span>Git</span><span>SonarQube</span><span>VisualVM</span><span>Bash</span></div></div>
-          <div class="skill-panel"><div class="skill-icon">✳</div><h3>Mobile Development</h3><div class="skill-pills"><span>Swift</span><span>Objective-C</span><span>iOS</span><span>Xcode</span><span>HealthKit</span><span>MapKit</span><span>Push notifications</span><span>App Store releases</span></div></div>
-          <div class="skill-panel"><div class="skill-icon">⌁</div><h3>Performance & Reliability</h3><div class="skill-pills"><span>Bottleneck analysis</span><span>Memory profiling</span><span>Batching strategies</span><span>Restart safety</span><span>Duplicate prevention</span><span>Code quality</span></div></div>
+          <div class="skill-panel"><h3>Backend Engineering</h3><div class="skill-pills"><span>Java 21</span><span>Core Java</span><span>Multithreading</span><span>JDBC</span><span>Servlets / JSP</span><span>MVC</span><span>Maven</span><span>REST APIs</span></div></div>
+          <div class="skill-panel"><h3>Data & Messaging</h3><div class="skill-pills"><span>MySQL 8</span><span>ClickHouse</span><span>SQL optimization</span><span>Batch processing</span><span>JMS</span><span>Kafka</span><span>NATS</span><span>Scheduled jobs</span></div></div>
+          <div class="skill-panel"><h3>Delivery, Quality & Mobile</h3><div class="skill-pills"><span>WildFly</span><span>Docker</span><span>Jenkins</span><span>GitHub Actions</span><span>SonarQube</span><span>VisualVM</span><span>Bash</span><span>Swift</span><span>Objective-C</span><span>HealthKit</span></div></div>
         </div>
-        <p class="tiny-note">These skills reflect technologies covered in your résumé and technical discussions. Remove anything you have not used hands-on or cannot confidently discuss in an interview.</p>
       </section>
 
       <section class="section education-section" id="education">
@@ -204,7 +165,7 @@
       </section>
     </main>
 
-    <footer class="footer"><a class="brand" href="#home"><span class="brand-mark">P</span><span>Pulkit<span class="brand-dot">.</span></span></a><p>Designed with intention. Built for the web.</p><a href="#home" class="back-top">Back to top ↑</a><span class="copyright">© <span id="year"></span> Pulkit Kumar Singh</span></footer>
+    <footer class="footer"><a class="brand" href="#home"><span class="brand-mark">P</span><span>Pulkit<span class="brand-dot">.</span></span></a><p>Java backend engineering · Data systems · iOS</p><a href="#home" class="back-top">Back to top ↑</a><span class="copyright">© <span id="year"></span> Pulkit Kumar Singh</span></footer>
   </div>
   <script src="script.js"></script>
 </body>

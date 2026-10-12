@@ -1,6 +1,6 @@
 # Pulkit Kumar Singh — Portfolio
 
-A responsive, static portfolio website built with HTML, CSS, and vanilla JavaScript. It is designed for GitHub Pages and requires no build step. The profile emphasizes recent backend/data engineering work (Java 21, MySQL, ClickHouse, messaging, batch processing, and CI/CD) while retaining earlier iOS experience.
+A responsive, static portfolio website built with HTML, CSS, and vanilla JavaScript. It is designed for GitHub Pages and requires no build step. The layout is project-first: a horizontally scrollable timeline places the company/workstream above each project milestone and the technology stack below it. It emphasizes recent Java backend/data engineering work while retaining selected iOS projects.
 
 ## Files
 - `index.html` — content and page structure
